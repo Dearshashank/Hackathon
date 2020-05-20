@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33818" started-at="2020-05-20T19:47:18Z" finished-at="2020-05-20T19:47:52Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="33818" started-at="2020-05-20T19:47:18Z" finished-at="2020-05-20T19:47:52Z">
+      <class name="Udemy.GetCourseDetails">
+        <test-method status="PASS" signature="GetDetails()[pri:0, instance:Udemy.GetCourseDetails@5419f379]" name="GetDetails" duration-ms="612" started-at="2020-05-21T01:17:51Z" finished-at="2020-05-21T01:17:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetDetails -->
+      </class> <!-- Udemy.GetCourseDetails -->
+      <class name="Udemy.WebDevelopment">
+        <test-method status="PASS" signature="MouseOverWebDevelopment()[pri:0, instance:Udemy.WebDevelopment@62ee68d8]" name="MouseOverWebDevelopment" duration-ms="24047" started-at="2020-05-21T01:17:18Z" finished-at="2020-05-21T01:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseOverWebDevelopment -->
+      </class> <!-- Udemy.WebDevelopment -->
+      <class name="Udemy.ApplyFilters">
+        <test-method status="PASS" signature="Filter()[pri:0, instance:Udemy.ApplyFilters@4520ebad]" name="Filter" duration-ms="9134" started-at="2020-05-21T01:17:42Z" finished-at="2020-05-21T01:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Filter -->
+      </class> <!-- Udemy.ApplyFilters -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
