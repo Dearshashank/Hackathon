@@ -10,15 +10,18 @@ public class ApplyFilters extends DriverSetup{
 	
 	@Test
 	public void Filter() throws InterruptedException{
-		
-		 driver.findElement(By.xpath("//span[contains(text(),'Filter')]")).click();
+			
+		// Filters
+		   driver.findElement(By.xpath("//span[contains(text(),'Filter')]")).click();
 		   
 		   Thread.sleep(2000);
 		   
+		 //Beginner 
 		   driver.findElement(By.xpath("//fieldset[@name='Level']/div[2]/label[1]/span[1]")).click();
 		   
 		   Thread.sleep(3000);
 		   
+		   //English 
 		   driver.findElement(By.xpath("//fieldset[@name='Language']/div[1]/label[1]/span[1]")).click();
 		   
 		   Thread.sleep(3000);
