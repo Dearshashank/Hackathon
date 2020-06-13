@@ -10,27 +10,29 @@ public class WebDevelopment extends DriverSetup{
 	@Test
 	public void MouseOverWebDevelopment() throws InterruptedException{
 		
-		driver=Udemy.DriverSetup.getDriver();
+		   driver=Udemy.DriverSetup.getDriver();
 		
 		   Actions action = new Actions(driver);
 		   
-		   WebElement element = driver.findElement(By.xpath("//span[@class='udi udi-explore']"));
+		   //1
+		   WebElement element = driver.findElement(By.xpath("//span[text()='Categories']"));
 		   
 		   action.moveToElement(element).build().perform();
 		   
 		   Thread.sleep(2000);
-		  
+		   //2
 		   WebElement element2 = driver.findElement(By.xpath("//li[@class='h100p']//li[1]//a[1]//span[2]"));
 		   
 		   action.moveToElement(element2).build().perform();
 		   
 		   Thread.sleep(2000);
-		   
+		   //3
 		   WebElement element3 = driver.findElement(By.xpath("//span[contains(text(),'Web Development')]"));
 		   
 		   action.moveToElement(element3).build().perform();
 		   
 		   Thread.sleep(2000);
+		   //4
 		   
 		   WebElement element4  = driver.findElement(By.xpath("//span[contains(text(),'All Web Development')]"));
 		   
