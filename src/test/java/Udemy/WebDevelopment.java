@@ -21,7 +21,7 @@ public class WebDevelopment extends DriverSetup{
 		   
 		   Thread.sleep(2000);
 		   //2
-		   WebElement element2 = driver.findElement(By.xpath("//li[@class='h100p']//li[1]//a[1]//span[2]"));
+		   WebElement element2 = driver.findElement(By.xpath("//a[@href='/courses/development/']//span[contains(text(),'Development')]"));
 		   
 		   action.moveToElement(element2).build().perform();
 		   
