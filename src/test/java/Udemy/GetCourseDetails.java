@@ -9,12 +9,18 @@ public class GetCourseDetails extends DriverSetup {
 	public void GetDetails() throws InterruptedException{
 		
 		 for(int i =1 ;i<=3 ;i++){
-			   String CourseName =driver.findElement(By.xpath("//*[@id='udemy']/div[2]/div[3]/div/div/div[5]/div[2]/div["+i+"]/div/a/div/div[2]/div[1]/h4")).getText();	   
-			   String Rating = driver.findElement(By.xpath("//*[@id='udemy']/div[2]/div[3]/div/div/div[5]/div[2]/div["+i+"]/div/a/div/div[2]/div[5]/div[2]/div/span[1]")).getText();
-			   String totalHours = driver.findElement(By.xpath("//*[@id='udemy']/div[2]/div[3]/div/div/div[5]/div[2]/div["+i+"]/div/a/div/div[2]/div[2]/div/span[2]")).getText();
+			 
+			 // Title 
+			   String CourseName =driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[4]/div[1]/div[1]/div[5]/div[2]/div[ "+i+"]/div[1]/a[1]/div[1]/div[2]/div[1]/h4[1]")).getText();	   
+			 
+			   //Total hours                                  /html[1]/body[1]/div[2]/div[4]/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/a[1]/div[1]/div[2]/div[4]/div[2]/div[1]/span[1]
+			   String TotalHours = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[4]/div[1]/div[1]/div[5]/div[2]/div["+i+"]/div[1]/a[1]/div[1]/div[2]/div[2]/div[1]/span[2]")).getText();
+			 
+			   
+			   String Rating = driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[4]/div[1]/div[1]/div[5]/div[2]/div["+i+"]/div[1]/a[1]/div[1]/div[2]/div[5]/div[2]/div[1]/span[1]")).getText();
 			   System.out.println(CourseName);
 			   System.out.println(Rating);
-			   System.out.println(totalHours);
+			   System.out.println(TotalHours);
 			   }
 		    Thread.sleep(5000);
 			driver.close();
