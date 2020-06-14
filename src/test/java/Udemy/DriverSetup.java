@@ -15,7 +15,7 @@ public class DriverSetup {
 	public static WebDriver getDriver(){
 		
 		String UptoProject = System.getProperty("user.dir");   // Upto the project path
-		String Completepath= UptoProject + "\\BrowserDrivers\\chromedriver.exe";   // upto the driver exe file
+		String Completepath= UptoProject + "\\BrowserDrivers\\geckodriver.exe";   // upto the driver exe file
 		System.setProperty("webdriver.chrome.driver",Completepath); 
 		   
 		WebDriver driver = new ChromeDriver();
